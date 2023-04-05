@@ -1,4 +1,4 @@
-var timeEl = $('#timer');
+var timeEl = $('#current-date-and-time');
 
 // calculates current time and updates every second
 var timeInterval = setInterval(function() {

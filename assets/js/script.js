@@ -40,5 +40,12 @@ function submit(event) {
 function render() {
 
 }
+var timeEl = $('#current-date-and-time');
+
+// calculates current time and updates every second
+var timeInterval = setInterval(function() {
+    var currentTime = dayjs().format("MMM DD YYYY" + " at " + "hh:mm:ss a");
+    timeEl.text(currentTime); // displays time in header
+}, 1000);
 
 submitBtn.on('submit', submit);

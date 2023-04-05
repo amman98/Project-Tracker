@@ -1,3 +1,7 @@
-dateAndTimeEl = document.getElementById("current-date-and-time");
+var timeEl = $('#current-date-and-time');
 
-dateAndTimeEl.textContent = dayjs().format();
+// calculates current time and updates every second
+var timeInterval = setInterval(function() {
+    var currentTime = dayjs().format("MMM DD YYYY" + " at " + "hh:mm:ss a");
+    timeEl.text(currentTime); // displays time in header
+}, 1000);

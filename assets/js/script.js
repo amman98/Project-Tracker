@@ -26,3 +26,19 @@ function retrieveData() {
 }
 
 // Create past, present, future comparison tags
+
+var projectx = {
+    name: $('name'),
+    type: $('type'),
+    due: $('date'),
+}
+
+function submit(event) {
+    projects.push(projectx);
+}
+
+function render() {
+
+}
+
+submitBtn.on('submit', submit);
